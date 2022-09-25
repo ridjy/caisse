@@ -30,8 +30,8 @@ class User_model extends CI_Model
 	}	
 
 	public function getData(){
-		if (!empty($this->session->userdata['logged_in'])) {
-			return $this->session->userdata['logged_in'] ;
+		if (!empty($this->session->userdata('logged_in'))) {
+			return $this->session->userdata('logged_in') ;
 		}
  	}
 
